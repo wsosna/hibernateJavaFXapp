@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <property name="connection.driver_class">org.postgresql.Driver</property>
+        <property name="connection.url">jdbc:postgresql://127.0.0.1:5432/mojabaza</property>
+
+        <property name="connection.username">****</property>
+        <property name="connection.password">****</property>
+
+        <property name="connection_pool_size">1</property> <!--ile klientow moze sie laczyc z baza -->
+        <property name="hbm2ddl.auto">create</property> <!--create, validate, update, create-drop-->
+        <property name="show_sql">true</property> <!--w konsoli widac jakie zapytania ida do bazy -->
+        <!--dobre do testowania czy nie idzie za duzo zapytan itp wyswietla w jednej linijce-->
+        <property name="format_sql">true</property>
+        <!-- formatuje na czytelniejsze-->
+    </session-factory>
+</hibernate-configuration>

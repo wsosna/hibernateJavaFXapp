@@ -1,0 +1,31 @@
+AnchorPane {
+    -fx-background-color: #377b80;
+}
+
+VBox {
+    -fx-background-color: rgba(76, 196, 203, 0.42);
+}
+
+Label {
+    -fx-font-family: Tahoma;
+    -fx-font-size: 12;
+    -fx-font-weight: bolder;
+}
+
+Button {
+    -fx-border-radius: 12px;
+    -fx-background-color: #008CBA;
+    -fx-font-size: 12;
+    -fx-font-family: Tahoma;
+    -fx-text-alignment: center;
+    -fx-font-weight: bolder;
+    -fx-text-fill: white;
+}
+
+Button:hover {
+    -fx-background-color: #00befa;
+}
+
+Button:pressed {
+    -fx-background-color: #00759b;
+}
